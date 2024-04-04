@@ -10,10 +10,10 @@ st.set_page_config(page_title = "CodeSage", layout = "centered",page_icon=im)
 lan = st.selectbox("#### Language", ["English", "Hindi","Kannada"])
 
 if lan == "English":
-    home_title = "AI Interviewer"
-    home_introduction = "Welcome to AI Interviewer, empowering your interview preparation with generative AI."
+    home_title = "CODE SAGE"
+    home_introduction = "Welcome to Code Sage, Connect, Collaborate, and Cultivate Your Tech Network  |  Artificial General Intelligence powered Next-Gen suite of automated hiring solutions"
     with st.sidebar:
-        st.markdown('AI Interviewer - V1.0.1')
+        st.markdown('Code Sage - V1.0.1')
         st.markdown(""" 
         #### Let's contact:
         [Shreyas SD](https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile)
