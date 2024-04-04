@@ -4,21 +4,25 @@ from app_utils import switch_page
 import streamlit as st
 from PIL import Image
 
-im = Image.open("icon.png")
-st.set_page_config(page_title = "AI Interviewer", layout = "centered",page_icon=im)
+im = Image.open("icon2.png")
+st.set_page_config(page_title = "CodeSage", layout = "centered",page_icon=im)
 
-lan = st.selectbox("#### Language", ["English", "中文"])
+lan = st.selectbox("#### Language", ["English", "Hindi","Kannada"])
 
 if lan == "English":
     home_title = "AI Interviewer"
     home_introduction = "Welcome to AI Interviewer, empowering your interview preparation with generative AI."
     with st.sidebar:
-        st.markdown('AI Interviewer - V0.1.2')
+        st.markdown('AI Interviewer - V1.0.1')
         st.markdown(""" 
         #### Let's contact:
-        [Haoxiang Jia](https://www.linkedin.com/in/haoxiang-jia/)
+        [Shreyas SD](https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile)
         
-        [Zicheng Wang](https://www.linkedin.com/in/todd-wang-5001aa264/)
+        Building the next Gen - Industry Disruptive Suite of Artificial Intelligence
+        and Machine Learning powered solutions across 
+        Software | Storage | Retail | E commerce | Ad tech | Energy & Gas |
+
+                    
         #### Please fill the form, we'd love to have your feedback:
         [Feedback Form](https://docs.google.com/forms/d/13f4q03bk4lD7sKR7qZ8UM1lQDo6NhRaAKv7uIeXHEaQ/edit)
     
@@ -39,9 +43,31 @@ if lan == "English":
     st.markdown(f"""# {home_title} <span style=color:#2E9BF5><font size=5>Beta</font></span>""",unsafe_allow_html=True)
     st.markdown("""\n""")
     #st.markdown("#### Greetings")
-    st.markdown("Welcome to AI Interviewer! 👏 AI Interviewer is your personal interviewer powered by generative AI that conducts mock interviews."
-                "You can upload your resume and enter job descriptions, and AI Interviewer will ask you customized questions. Additionally, you can configure your own Interviewer!")
+    st.markdown("Smart AI Interviews - Elevate Your Talent, One Question at a Time.")
     st.markdown("""\n""")
+    st.markdown("""Our Smart AI Interview feature transforms the recruitment process by leveraging ChatGPT 3.5 Turbo API for conducting dynamic aptitude and technical interviews. Designed to challenge candidates with a range of questions from basic to advanced levels, this system provides immediate, detailed feedback, ensuring a comprehensive assessment of skills and knowledge.
+    Comprehensive Project Review""")
+    st.markdown("""\n""")
+    st.markdown("""Deep Dive into Your Projects, Uncover True Potential.""")
+    st.markdown("""SkillSage takes a thorough look at candidates' previous projects, evaluating roles, responsibilities, and the implementation of solutions. This in-depth analysis not only highlights technical capabilities but also problem-solving skills and project impact, offering valuable insights into a candidate's real-world experience and contributions.
+    Real-time Speech-to-Text and Text-to-Speech """)
+    st.markdown("""\n""")
+    st.markdown("""Deep Dive into Your Projects, Uncover True Potential.""")
+    st.markdown("""SkillSage takes a thorough look at candidates' previous projects, evaluating roles, responsibilities, and the implementation of solutions. This in-depth analysis not only highlights technical capabilities but also problem-solving skills and project impact, offering valuable insights into a candidate's real-world experience and contributions.
+    Real-time Speech-to-Text and Text-to-Speech """)
+    st.markdown("""\n""")
+    st.markdown("""Speak and Listen, Communication as Natural as It Gets.""")
+    st.markdown("""Our platform features cutting-edge
+    Automatic Speech Recognition technology, seamlessly converting spoken responses into text for analysis, followed by state-of-the-art text-to-speech feedback. This ensures an interactive, engaging interview experience that mirrors face-to-face conversations, enhancing communication and comprehension.
+    Continuous Learning and Skill Enhancement """)
+    st.markdown("""\n""")
+    st.markdown("""Connect, Collaborate, and Cultivate Your Tech Network""")
+    st.markdown("""Envisioned as the "Factbook" for tech professionals, SkillSage offers a unique space for users to connect, share knowledge, and collaborate. By fostering a community of like-minded individuals, our platform encourages networking and mutual learning, empowering tech professionals to build meaningful connections and advance their careers """)
+
+
+    
+
+    
     with st.expander("Updates"):
         st.write("""
         08/13/2023
