@@ -10,10 +10,10 @@ st.set_page_config(page_title = "CodeSage", layout = "centered",page_icon=im)
 lan = st.selectbox("#### Language", ["English", "Hindi","Kannada"])
 
 if lan == "English":
-    home_title = "AI Interviewer"
-    home_introduction = "Welcome to AI Interviewer, empowering your interview preparation with generative AI."
+    home_title = "CodeSage"
+    home_introduction = "Welcome to CodeSager,."
     with st.sidebar:
-        st.markdown('AI Interviewer - V1.0.1')
+        st.markdown(' - V1.0.1')
         st.markdown(""" 
         #### Let's contact:
         [Shreyas SD](https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile)
@@ -87,7 +87,7 @@ if lan == "English":
         )
     if selected == 'Professional':
         st.info("""
-            📚In this session, the AI Interviewer will assess your technical skills as they relate to the job description.
+            📚In this session, the  will assess your technical skills as they relate to the job description.
             Note: The maximum length of your answer is 4097 tokens!
             - Each Interview will take 10 to 15 mins.
             - To start a new session, just refresh the page.
@@ -97,7 +97,7 @@ if lan == "English":
             switch_page("Professional Screen")
     if selected == 'Resume':
         st.info("""
-        📚In this session, the AI Interviewer will review your resume and discuss your past experiences.
+        📚In this session, the  will review your resume and discuss your past experiences.
         Note: The maximum length of your answer is 4097 tokens!
         - Each Interview will take 10 to 15 mins.
         - To start a new session, just refresh the page.
@@ -108,7 +108,7 @@ if lan == "English":
             switch_page("Resume Screen")
     if selected == 'Behavioral':
         st.info("""
-        📚In this session, the AI Interviewer will assess your soft skills as they relate to the job description.
+        📚In this session, the  will assess your soft skills as they relate to the job description.
         Note: The maximum length of your answer is 4097 tokens!
         - Each Interview will take 10 to 15 mins.
         - To start a new session, just refresh the page.
@@ -119,9 +119,9 @@ if lan == "English":
             switch_page("Behavioral Screen")
     if selected == 'Customize!':
         st.info("""
-            📚In this session, you can customize your own AI Interviewer and practice with it!
-             - Configure AI Interviewer in different specialties.
-             - Configure AI Interviewer in different personalities.
+            📚In this session, you can customize your own  and practice with it!
+             - Configure  in different specialties.
+             - Configure  in different personalities.
              - Different tones of voice.
              
              Coming at the end of July""")
